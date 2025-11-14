@@ -5,16 +5,29 @@
   </head>
   <body>
     <a-asset>
-      <img id="sky" src="assets/colors.png" alt="">
+      <img id="sand" src="assets/sand.jpg">
+      <img id="ball" src="assets/ball.jpg">
     </a-asset>
-
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-box position="-11.5 2.5 -11.5" scale="10 5 10" rotation="0 45 0" color="#ffdf87"></a-box>
       
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" src=""></a-plane>
-      <a-sky src="sky"></a-sky>
+      <a-cone position="-12 3 -4" radius-bottom="2" radius-top="1.5" height="6" color="#ffdf87"></a-cone>
+      <a-cone position="-4.5 3 -12.5" radius-bottom="2" radius-top="1.5" height="6" color="#ffdf87"></a-cone>
+      
+      <a-cone position="-11.5 7 -11.5" radius-bottom="3" radius-top="1" height="4"color="#ffdf87"></a-cone>
+
+      <a-cylinder position="-11.5 9 -11.5" radius=".125" height="7" color="brown"></a-cylinder>
+      <a-cylinder position="-12 5 -4" radius=".125" height="7" color="brown"></a-cylinder>
+      <a-cylinder position="-4.5 5 -12.5" radius=".125" height="7" color="brown"></a-cylinder>
+
+      <a-triangle vertex-a="-11.5 12.5 -11.5" vertex-b="-11.5 11 -11.5" vertex-c="-9 11.5 -13" color="red"></a-triangle>
+      <a-triangle vertex-a="-12 8.5 -4" vertex-b="-12 7 -4" vertex-c="-10 8 -6" color="red"></a-triangle>
+      <a-triangle vertex-a="-4.5 8.5 -12.5" vertex-b="-4.5 7 -12.5" vertex-c="-2.5 8 -15" color="red"></a-triangle>
+
+      <a-sphere src="#ball" radius="10" position="15 10 -20"></a-sphere>
+
+      <a-plane src="#sand" repeat="10 10" position="0 0 0" rotation="-90 0 0" width="400" height="400"></a-plane>
+      <a-sky src="assets/beach.jpg" position="0 50 0"></a-sky>
     </a-scene>
   </body>
 </html>
